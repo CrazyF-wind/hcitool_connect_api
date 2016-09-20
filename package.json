@@ -18,7 +18,10 @@
     "name": "fwind"
   },
   "dependencies": {
-    "mongodb": "2.1.20"
+    "mongodb": "2.1.20",
+    "q": "*",
+    "node-jvm":"0.2.3",
+    "java":"0.7.2"
   },
   "license": "MIT",
   "readmeFilename": "README.md"
