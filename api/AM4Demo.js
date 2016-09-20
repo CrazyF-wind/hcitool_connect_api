@@ -6,7 +6,7 @@ java.classpath.push("../lib/testdemo.jar");
 java.classpath.push("../lib/iHealthLibrary_2.3.0.23.jar");
 java.classpath.push("../lib/android.jar");
 
-java.import('com.ihealth.communication.control.Am3sControl');
+//java.import('com.ihealth.communication.control.Am3sControl');
 //java.import("android.content.Context");
 //java.import("com.ihealth.communication.base.comm.BaseComm");
 //java.import("com.ihealth.communication.base.comm.BaseCommCallback");
@@ -29,7 +29,7 @@ var data = java.callMethodSync(GetValue, "getData", "dd");
 console.log("data:" + data);
 
 //获取时间模式
-//var AM3SClasss = java.newInstanceSync("com.ihealth.communication.manager.iHealthDevicesManager");
+//var AM3SClasss = java.newInstanceSync("com.ihealth.communication.control.Am3sControl");
 //if (java.instanceOf(AM3SClasss, "com.ihealth.communication.manager.iHealthDevicesManager")) {
 //    console.log("obj is an instance of SuperClass");
 //}
@@ -37,11 +37,11 @@ console.log("data:" + data);
 //console.log("HourMode:" + HourMode);
 
 //连接设备
-//var AM3SClasss = java.newInstanceSync("com.ihealth.communication.control.Am3sControl");
+//var AM3SClasss = java.newInstanceSync("varcom.ihealth.communication.manager.iHealthDevicesManager");
 //var Connect = java.callMethodSync(AM3SClasss, "connectDevice", "远古的风", "004D320624D1", "AM3S");
 //console.log("Connect:" + Connect);
 
-
+//判断是否为一个方法
 java.newInstance("com.ihealth.communication.control.Am3sControl", function (err, list) {
     if (err) {
         console.error(err);
